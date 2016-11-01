@@ -3,5 +3,3 @@ Jonathan Lobo
 
 jpl68@pitt.edu
 
-Hosted at www.jonathanlobo.com!
-
