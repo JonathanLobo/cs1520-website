@@ -1,0 +1,157 @@
+/*styles by element*/
+html {
+  font-size: 100%;
+  font-family: "Open Sans", Helvetica, sans-serif;
+}
+
+body {
+  background-color: white;
+}
+
+input[type="submit"], .button {
+  background-color: #ffc107;
+  border: 4px solid #ffc107;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1em;
+  height: 40px;
+  line-height: 2;
+  padding: 0 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all .15s;
+}
+
+input[type="submit"]:hover, .button:hover {
+  background-color: #ffd54f;
+  border: 4px solid #ffecb3;
+}
+
+/*styles by id*/
+#mainBanner {
+  min-height: 400px;
+  max-height: 800px;
+  position: relative;
+  background-color: #2196F3;
+}
+
+#form {
+  border-radius: 20px;
+  background-color: white;
+  padding: 20px;
+}
+
+#links {
+  display: inline-block;
+}
+
+/*styles by class*/
+.paragraph-normal {
+  color: #C70039;
+  font-size: 1.2rem;
+}
+
+.brightness {
+  float: left;
+  margin: 10px
+}
+
+.brightness img:hover {
+  opacity: 0.5;
+}
+
+.slider .indicators .indicator-item.active {
+  background-color: #1a237e;
+}
+
+.indigo-gradient {
+  background: linear-gradient(to right, #303f9f, #c5cae9)
+}
+
+.card-header {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.img-expand {
+  height: 500px;
+  width: auto;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  z-index: 0 !important;
+}
+
+.img-expand:hover {
+  z-index: 100 !important;
+  -webkit-transform: scale(1.25, 1.25);
+  transform: scale(1.25, 1.25);
+  box-shadow: 0 0 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.card-text-new {
+  font-size: 0.8em;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.my-pic {
+  width: 100%;
+  height: auto;
+}
+
+.carousel {
+  min-height: 600px;
+  max-height: 800px;
+  height: auto;
+}
+
+.main-carousel {
+  width: 50%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.header-text {
+  text-shadow: 2px 2px #0f0f0f;
+}
+
+.school-img {
+  height: auto;
+  width: auto;
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.float-left {
+  float: left;
+}
+
+.error {
+  color: white;
+  text-shadow: 1px 1px red;
+}
+
+.success-text {
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px green;
+}
+
+.close-button:hover {
+  background-color: #ef5350 !important;
+}
