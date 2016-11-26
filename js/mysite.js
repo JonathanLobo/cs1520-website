@@ -11,7 +11,7 @@ $(document).ready(function () {
     infinite: true,
     adaptiveHeight: true
   });
-  $('.scrollspy').scrollSpy();
+  $('.scrollspy').scrollSpy({ scrollOffset: 50 });
   $('#errorText1').hide();
   $('#errorText2').hide();
   $('#errorText3').hide();
@@ -26,7 +26,7 @@ $(document).on('click', '#submitButton', function(e) {
   $('#successText').hide();
 
   if (validate()) {
-    $('#successText').show();
+    $('#successText').fadeIn('slow');
   }
 });
 
@@ -40,17 +40,17 @@ function validate() {
   var ret = true;
 
   if (name === '') {
-    $('#errorText1').show();
+    $('#errorText1').fadeIn('slow');
     ret = false;
   }
 
   if (!emailRegex.test(email)) {
-    $('#errorText2').show();
+    $('#errorText2').fadeIn('slow');
     ret = false;
   }
 
   if (comments === '') {
-    $('#errorText3').show();
+    $('#errorText3').fadeIn('slow');
     ret = false;
   }
 
