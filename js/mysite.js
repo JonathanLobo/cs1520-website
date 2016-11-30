@@ -18,8 +18,6 @@ $(document).ready(function () {
   $('#successText').hide();
 });
 
-var handled = false;
-
 $(document).on('click', '#submitButton', function(e) {
   e.preventDefault();
   $('#errorText1').hide();
