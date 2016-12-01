@@ -28,6 +28,9 @@ $(document).on('click', '#submitButton', function(e) {
   if (validate()) {
     $("#contactForm").ajaxSubmit({url: 'submit.php', type: 'post'})
     $('#successText').fadeIn('slow');
+    document.getElementById('nameBox').value = '';
+    document.getElementById('email').value = '';
+    document.getElementById('comments').value = '';
   }
 });
 
