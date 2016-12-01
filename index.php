@@ -303,7 +303,7 @@
         <div class="row">
           <div class="col l6 s12">
             <h5 class="white-text">Contact Me</h5>
-            <form id="contactForm" class="col s12" method="post" action="submit.php">
+            <form id="contactForm" class="col s12" method="post" action="./php/submit.php">
               <div class="row">
                 <div class="input-field col s6">
                   <i class="material-icons prefix white-text">account_circle</i>
@@ -372,6 +372,7 @@
     <script src="http://cdn.jsdelivr.net/jquery.slick/1.3.15/slick.min.js"></script>
     <script src="js/materialize.js"></script>
     <script src="js/mysite.js"></script>
+    <noscript>Your browser does not support JavaScript!</noscript>
 
   </body>
 </html>

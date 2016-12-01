@@ -26,7 +26,7 @@ $(document).on('click', '#submitButton', function(e) {
   $('#successText').hide();
 
   if (validate()) {
-    $("#contactForm").ajaxSubmit({url: 'submit.php', type: 'post'})
+    $("#contactForm").ajaxSubmit({url: './php/submit.php', type: 'post'})
     $('#successText').fadeIn('slow');
     document.getElementById('nameBox').value = '';
     document.getElementById('email').value = '';

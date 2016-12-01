@@ -1,15 +1,25 @@
 <?php
 $servername = "localhost";
-$username = "jlobo";
-$password = "password";
-$dbname = "mywebsite";
+$username = "root";
+$password = "";
 
 // Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new mysqli($servername, $username, $password);
 
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
+}
+
+// Create database
+$dbCreate = "CREATE DATABASE IF NOT EXISTS mywebsite";
+if ($conn->query($dbCreate) === FALSE) {
+    echo "Error creating database: " . $conn->error;
+}
+
+// Select database
+if ($conn->select_db("mywebsite") === FALSE) {
+    echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
 $name = $_POST['name'];
@@ -27,15 +37,13 @@ $sql = "CREATE TABLE IF NOT EXISTS comments (
 $sql2 = "INSERT INTO comments (Name, Email, Comments)
 VALUES ('$name', '$email', '$comment')";
 
-if ($conn->query($sql) === TRUE) {
-
-} else {
+// Create table
+if ($conn->query($sql) === FALSE) {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
-if ($conn->query($sql2) === TRUE) {
-    
-} else {
+// Insert data into table
+if ($conn->query($sql2) === FALSE) {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
